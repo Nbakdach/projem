@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>web project login-sayfası</title>
+</head>
+<body  class="login-sayfası">
+
+    <div class="containar">
+        <header>
+            <nav>
+                <label class="togle">
+                    <i class="fa fa-bars"></i>
+                </label>
+                
+                <ul>
+                    <label for="" class="logo">Web project</label>
+                    <li><a href="index.html" class="çizgi">Ana Sayfa</a> </li>
+                    <li><a href="hakkımda.html">Hakkımda</a> </li>
+                    <li><a href="cv.html">Özgeçmiş</a> </li>
+                    <li><a href="şehrim.html">Şehrim</a></li>
+                    <li > <a href="mirasımız.html">Mirasımız</a> </li>
+                    <li><a href="ilgi-alanlarım.html">İlgi alanlarım</a> </li>
+                    <li><a href="iletişim.html">İletişim</a> </li>
+                    <li > <a href="login.html" class="login">Login</a> </li>  
+                </ul>
+           </nav>
+           <label for="" class="logo1">Web project</label>
+        </header>
+    </div>
+
+    <form action="login.php" method="POST">
+        <h2>Login</h2>
+        <input type="text" placeholder="Kulancı adı" name="ad" required >
+        <input type="password" placeholder=" Şifre" name="şifre" required >
+        <input type="submit" value="login" required>
+    </form>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(' .togle i').click(function(){
+            $('ul').toggleClass('show')
+        });
+    </script>
+
+</body>
+</html>
