@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>web project ilgiAlanı-sayfası</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="ilgi-sayfası">
+
+    <div class="containar">
+        <header>
+            <nav>
+                <label class="togle">
+                    <i class="fa fa-bars"></i>
+                </label>
+              
+                <ul>
+                    <label for="" class="logo">Web project</label>
+                    <li><a href="index.html" >Ana Sayfa</a> </li>
+                    <li><a href="hakkımda.html" >Hakkımda</a> </li>
+                    <li><a href="cv.html">Özgeçmiş</a> </li>
+                    <li><a href="şehrim.html">Şehrim</a></li>
+                    <li><a href="mirasımız.html" >Mirasımız</a> </li>
+                    <li><a href="ilgi-alanlarım.html" class="çizgi">İlgi alanlarım</a> </li>
+                    <li><a href="iletişim.html">İletişim</a> </li>
+                    <li > <a href="login.html" class="login" >Login</a> </li>
+                </ul>
+                <label for="" class="logo1">Web project</label>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div id="köpek_sonucu" class="sonuc">
+            <p>Köpek resimlerini görmek için aşağıdaki butona tıklayınız</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="köpek_btn">tıklayınız</button>
+        </div>
+     
+        <div id="kedi_sonucu" class="sonuc">
+          <p>kedi resimlerini görmek için aşağıdaki butona tıklayınız</p>
+        </div>
+      
+        <div class="buttons">
+          <button id="kedi_btn">tıklayınız</button>
+        </div>
+    
+        <script src="ilgi alanlarım.js"></script>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(' .togle i').click(function(){
+            $('ul').toggleClass('show')
+        });
+    </script>
+
+</body>
+</html>
+
+ilgi-alanlarım.html
