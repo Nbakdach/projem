@@ -1,0 +1,1285 @@
+/****************** Start Navbar *********************/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header
+{
+    box-shadow: 0px 1px 2px 2px #000;
+    z-index: 50;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: rgb(0, 0, 0,.7);
+    box-sizing: border-box;
+}
+
+nav label.logo{
+    position: relative;
+    right: 140px;
+    top: 5px;
+    font-size:22px;
+    color: white;
+}
+
+nav ul{
+    position: absolute;
+    float: left;
+    left: 170px;
+    list-style: none;
+}
+
+nav li{ 
+    display: inline-block;
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    padding: 18px 18px;
+}
+
+nav li a.login{
+    position: relative;
+    left:130px;
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+
+nav li a.çizgi:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #0094ff; 
+}
+
+nav li a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #0094ff;  
+}
+
+nav li a:hover:after {
+    width: 100%;
+}
+
+.containar{
+    height:10%;
+    width: 100%;  
+}
+
+nav .togle{
+    font-size: 30px;
+    color: #fff;
+    float: left;
+    line-height: 45px;
+    margin-left: 5%;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+}
+
+header .logo1{
+   display: none;
+}
+
+@media screen and (max-width: 1250px){
+    nav .togle{
+        display: block;
+        color: rgb(255, 254, 254);
+        float: right;
+        margin:10px 30px 0px;
+    }
+
+    nav .togle:hover{
+        color: #0094ff;
+    }
+
+    nav ul {
+        position: fixed;
+        top: -600px;
+        z-index: -1;
+        margin-top: 0;
+        right: 0;
+        left: 0;
+        width: 250px;
+        background: rgb(0, 0, 0,.7);
+        display: inline-block;
+        transition: top .4s;  
+    }
+
+    label.logo{
+        display: none;
+    }
+    
+    nav ul.show{
+        top: 60px;
+    }
+
+    nav ul li{
+        top: 0px;
+        width: 100%;
+        float: right;
+        text-align: center;
+    }
+ 
+    nav li a.login{
+        position: relative;
+        left:0px;
+        border: none;
+        padding: 15px 20px;
+    }
+
+    header .logo1{
+        display: inline-block;
+        position: relative;
+        right: 0px;
+        top: 5px;
+        font-size:22px;
+        color: white;
+        margin:10px 30px 0;
+     }
+
+     nav li a.çizgi{
+        color:#0094ff; 
+    }
+    
+    nav li a:hover{ 
+        color: #0094ff;
+    }
+
+    nav li a.çizgi:after {
+        display: none;
+    }
+
+    nav li a:after {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    nav ul{
+        width: 100%;
+    }
+}
+
+
+/****************** finish Navbar *********************/
+
+/****************** Start Anasayfa *********************/
+.ana-sayfa{
+  
+   background: url(fotoğraflar/t.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.ana-sayfa .img{
+    width: 310px;
+    position: absolute;
+   bottom: 0px;
+    right:20px;
+    z-index: 1;
+ }
+.ana-sayfa table{
+    font-size: 18px;
+    z-index: 2;
+    position: absolute;
+    bottom: 20px;
+     left:20px;
+    color: white;
+    font-size: 17px;
+    text-shadow:  1px 1px 2px rgb(0 0 0);
+
+}
+
+.ana-sayfa p{
+    text-shadow:  1px 1px 2px rgb(0 0 0);
+font-size: 18px;
+position: absolute;
+    top: 100px;
+     left:20px;
+  
+    color: white;
+font-size: 50px;
+text-align: center;
+z-index:3;
+}
+
+@media screen and (max-width: 450px){
+    .ana-sayfa{
+  
+        background: url(fotoğraflar/t1.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+         height: 100%;
+     }
+   
+.ana-sayfa p{
+     top: 80px;
+     left:20px;
+     font-size: 30px;
+
+}
+.ana-sayfa table{
+    display: none;
+}
+.ana-sayfa .img{
+    width: 280px;
+    left:40px;
+ }
+}
+/****************** finish Anasayfa *********************/
+
+
+/****************** start hakkımda *********************/
+.hakkımda-sayfası{
+    background: url(fotoğraflar/hb.jpg);
+}
+
+.hakkımda-sayfası main{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    box-shadow: 0px 0px 5px 2px #000;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 450px;
+    background: rgb(0, 0, 0,.5);
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: url(fotoğraflar/bh.jpg);
+}
+
+.hakkımda-sayfası .üst-kısım{ 
+    padding: 15px; 
+    top: 10%;
+    position: relative;
+    height: 180px;
+    float: left;
+    left: 3%;
+    width: 58.5%;
+    color: white;
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+    background: url(fotoğraflar/bh.jpg);
+}
+
+.hakkımda-sayfası .resim{
+    position: relative;
+    float: right;
+    top: 10%;
+    right: 3%;
+    height: 180px;
+    width: 29.5%;
+}
+    
+.üst{
+    width: 100%;
+    height: 210px;
+}
+
+.hakkımda-sayfası .img{
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+    height:210px;
+    width: 100%;
+}
+
+.hakkımda-sayfası section{
+    position: relative;
+    bottom: -50px;
+    float: left;
+    height: 20%;
+    width:23.3%;
+    padding: 3%;
+    margin-left:3%;
+    background: url(fotoğraflar/bh.jpg);
+    box-shadow: 0px 1px 5px 0px #000;
+    color: #fff;
+}
+
+.hakkımda-sayfası section ul{
+    margin-left: 30px;
+}
+
+.hakkımda-sayfası b{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 900px){
+    .hakkımda-sayfası main{ 
+        top:50%;
+        height: 350px;
+    }
+    
+    .hakkımda-sayfası .üst-kısım{ 
+        padding: 2%; 
+        height: 120px;
+        left: 3%;
+        width: 58%;
+        font-size: 80%;
+    }
+
+    .hakkımda-sayfası .resim{
+     height: 136px;  
+    }
+        
+    .üst{
+        height: 160px;
+    }
+    
+    .hakkımda-sayfası .img{
+        height:100%;
+    }
+
+    .hakkımda-sayfası section{
+        font-size: 70%;
+        height: 80px;
+        width:27.3%;
+        padding: 1%;
+    }
+    
+    .hakkımda-sayfası section ul{
+        margin-left:10%;
+    }
+
+    .hakkımda-sayfası b{
+        font-size: 110%;  
+    }
+}
+
+@media screen and (max-width: 450px){
+    .hakkımda-sayfası main{
+        height: 260px;
+    }
+    
+    .hakkımda-sayfası .üst-kısım{ 
+    padding: 2%; 
+    height: 120px;
+    width: 58%;
+    font-size: 60%;
+   
+    }
+    .hakkımda-sayfası .resim{
+        height: 130px; 
+    }
+        
+    .üst{
+       height: 160px;
+    }
+    
+    .hakkımda-sayfası .img{
+        height:130px;
+    }
+
+    .hakkımda-sayfası section{
+       bottom: 0px;
+       font-size: 50%;
+        height: 80px;
+        width:27.3%;
+        padding: 1%;
+    }
+    
+    .hakkımda-sayfası section ul{
+        margin-left:10%;
+    }
+
+    .hakkımda-sayfası b{
+        font-size: 110%; 
+    }
+}
+/****************** finish hakkımda *********************/
+
+/****************** Start özgeçmiş *********************/
+.cv-sayfası{
+    background: url(fotoğraflar/hb.jpg); 
+}
+
+.cv-sayfası main{
+    margin: 50px auto;
+    background: url(fotoğraflar/bh.jpg);
+    box-shadow: 0px 0px 5px 2px #000;
+    color: white;
+    width: 60%;
+    height: 1100px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cv-sayfası .img{
+    margin: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+    width: 130px;
+    height: 130px;
+}
+
+.cv-sayfası section{
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+    background: url(fotoğraflar/bh.jpg);
+    height: 165px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.cv-sayfası h2{
+    font-size: 25px;
+    text-shadow:  1px 1px 2px rgb(0 0 0);
+    text-align: center;
+}
+.cv-sayfası .üst-kısım{
+    font-size: 25px;
+    text-shadow:  1px 1px 2px rgb(0 0 0);
+    text-align: center;
+}
+
+.cv-sayfası h4{
+    border-radius: 5px ;
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+    background: rgb(0, 0, 0, .2);
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.cv-sayfası p{
+   
+    line-height: 22px;
+}
+
+@media screen and (max-width: 800px){
+    .cv-sayfası main{
+        height: 1180px;
+        width: 80%;
+    }
+
+    .cv-sayfası section{
+       height: 190px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .cv-sayfası main{
+        width: 80%;
+        height:1300px;
+    }
+
+    .cv-sayfası section{
+    overflow: hidden;
+     height: 220px;
+      
+    }
+.cv-sayfası h4{
+font-size: 16px;
+}
+.cv-sayfası p{
+    font-size: 16px;
+}
+
+.cv-sayfası h2{
+    font-size: 20px;
+}
+
+}
+/****************** finish özgeçmiş *********************/
+
+
+/****************** Start şehrim *********************/
+
+.şehrim-sayfası{
+    background: url(fotoğraflar/hb.jpg);   
+}
+.şehrim-sayfası main{
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+    height: 2200px;
+    background: url(fotoğraflar/bh.jpg);
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+}
+
+.şehrim-sayfası section{
+    color: white;
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+   height: 16.5%;
+    padding: 15px;
+    margin: 30px;
+}
+
+.şehrim-sayfası h2{
+    font-size: 25px;
+    text-shadow:  1px 1px 2px rgb(0 0 0);
+    text-align: center;
+}
+
+.şehrim-sayfası h4{
+    border-radius: 5px ;
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+    background: rgb(0, 0, 0, .2);
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.şehrim-sayfası p{
+   
+    line-height: 22px;
+}
+
+.şehrim-sayfası .üst-sectinon{  
+    margin-bottom: 50px;
+    height: 20%;
+}
+
+.şehrim-sayfası .üstsağ-sectinon{
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+    height: 90%;
+    padding: 15px;
+    margin:  30px 30px 30px  0px;
+    width: 55%;
+    float: right;
+    line-height: 25px;
+    color: #fff;
+    font-size: 20px; 
+}
+
+.şehrim-sayfası .üstsol-sectinon{
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0);
+    height: 90%;
+     padding: 15px;
+     margin:  30px 0 30px  30px;
+     width: 30%;
+     float: left;
+}
+
+.şehrim-sayfası #mersin{
+    text-shadow:  1px 1px 2px rgb(0 0 0);
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.şehrim-sayfası p{
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.silder{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-manual{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 370px;
+    right: 300px;
+}
+
+.manual-btn{
+    border: 2px solid #0094ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #0094ff; 
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 370px;
+    right: 300px;
+}
+
+.navigation-auto div{
+    border: 2px solid #0094ff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;   
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #0094ff;   
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #0094ff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #0094ff; 
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #0094ff; 
+}
+
+@media screen and (max-width: 1250px)
+{
+    .şehrim-sayfası #mersin{
+        font-size: 20px;
+        margin: 5px;
+    }
+    
+    .şehrim-sayfası h2{
+        font-size: 20px;
+    
+    }
+    
+    .şehrim-sayfası h4{
+    
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .şehrim-sayfası p{
+    font-size: 18px;
+        line-height: 22px;
+    }
+
+    .şehrim-sayfası main{
+        position: relative;
+        margin: 50px auto;
+        width: 80%;
+        height: 2700px;
+    }
+    
+    
+    .şehrim-sayfası section{
+       height: 450px;
+        padding: 15px;
+        margin:30px;
+    }
+    .şehrim-sayfası .üst-sectinon{  
+        margin-bottom: 50px;
+          height: 580px;
+        }
+    .şehrim-sayfası .üstsağ-sectinon{
+         position: relative;
+         top: 30px;
+         height: 280px;
+         padding: 15px;
+         margin: 30px auto;
+         width: 80%;
+         float: none;
+         line-height: 20px;
+         color: white;
+         font-size: 18px; 
+    }
+    .şehrim-sayfası .üstsol-sectinon{
+        position: relative;
+        top: 20px;
+        height: 200px;
+         padding: 15px;
+         margin: 30px auto;
+         width: 80%;
+         float: none;
+         line-height: 20px;
+         font-size: 18px; 
+    }
+
+    .navigation-auto{
+      
+       margin-top: 170px;
+       right: 0px;
+    }
+
+    .navigation-manual{
+        margin-top: 170px;
+        right: 0px;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    .şehrim-sayfası main{
+        width: 80%;
+        height: 4200px;
+    }
+    .şehrim-sayfası section{
+       height: 800px;
+        overflow: hidden;
+    }
+    .şehrim-sayfası .üst-sectinon{  
+      
+          height: 700px;
+        }
+    .şehrim-sayfası .üstsağ-sectinon{
+        overflow: hidden;
+        height: 400px; 
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .şehrim-sayfası h2{
+        font-size: 18px;
+    }
+
+    .şehrim-sayfası p{
+    font-size: 16px;
+        line-height: 20px;
+    }
+
+    .şehrim-sayfası main{
+        margin: 30px auto;
+        height: 4530px;
+    }
+    
+    .şehrim-sayfası section{
+        height: 830px;
+        margin:15px;
+    }
+
+    .şehrim-sayfası .üst-sectinon{  
+        height: 970px;
+    }
+
+    .şehrim-sayfası .üstsağ-sectinon{
+        top: 20px;
+        height: 480px;
+        font-size: 16px; 
+    }
+
+    .şehrim-sayfası .üstsol-sectinon{
+        height: 400px;
+         font-size: 16px; 
+    }
+
+    .navigation-auto{ 
+        margin-top: 360px;
+    }
+
+    .navigation-manual{
+        margin-top: 360px;
+    }
+}
+
+/****************** finish şehrim *********************/
+
+/****************** start mirasımız *********************/
+
+.mirasımız-sayfası{
+   background: url(fotoğraflar/hb.jpg);
+}
+
+.mirasımız-sayfası main{
+    margin-top: 50px;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+.mirasımız-sayfası section{
+    overflow: hidden;
+    float: left;
+    height: 90%;
+    width:30%;
+    border-radius: 5px;
+    margin: 20px;
+    background: rgb(0, 0, 0,.4);
+    background: url(fotoğraflar/bh.jpg);
+    color: #fff;
+    box-shadow: 0px 0px 5px 2px #000;
+}
+
+.mirasımız-sayfası p{
+    line-height: 20px;
+    padding: 15px;
+}
+
+.mirasımız-sayfası h4{
+    background: rgb(0, 0, 0, .2);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px 2px #000;
+    margin: 15px 15px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1250px){
+  
+    .mirasımız-sayfası h4{
+        font-size: 18px;
+    }
+
+    .mirasımız-sayfası section{
+        float: none;
+        margin: 30px auto;
+        height: 320px;
+        width:60%;
+    }
+
+    .mirasımız-sayfası h4{
+        position: relative;
+        top: 5px; 
+    }
+
+    .mirasımız-sayfası p{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    .mirasımız-sayfası main{
+        margin-top: 50px;
+        width: 100%;
+        height: 480px;
+    }
+     
+    .mirasımız-sayfası section{
+        float: none;
+        margin: 50px auto;
+        height: 480px;
+        width:62%;
+    }
+
+    .mirasımız-sayfası h4{
+        position: relative;
+        top: 5px;  
+    }
+
+    .mirasımız-sayfası p{
+        margin-top: 15px;
+        }
+}
+
+@media screen and (max-width: 450px){
+  
+    .mirasımız-sayfası main{
+        margin-top: 50px;
+        width: 100%;
+        height: 650px;
+    }
+     
+    .mirasımız-sayfası section{
+        float: none;
+        margin: 50px auto;
+        height: 500px;
+        width:80%;
+    }
+
+    .mirasımız-sayfası h4{
+    position: relative;
+    top: 5px; 
+    }
+
+    .mirasımız-sayfası p{
+        margin-top: 15px;
+    }
+}
+
+/****************** finish mirasımız *********************/
+
+
+/****************** Start iletişim *********************/
+.iletişim-sayfası{
+    background: url(fotoğraflar/u.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.iletişim-sayfası form{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 450px;
+    background: rgb(0, 0, 0,.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.iletişim-sayfası h2{
+    color: #fff;
+    text-align: center;
+    margin: 20px 0px 5px;
+}
+
+.iletişim-sayfası ::placeholder{
+    color: #7c7676;
+}
+
+.iletişim-sayfası #simge{  
+    width:100%;
+    display: flex;
+    margin-top: 80px;
+}
+
+.iletişim-sayfası #simge img{
+    width: 40px;
+    height: 40px;
+ margin-left: 40px;
+}
+
+.iletişim-sayfası .ad,.Soyad{
+    outline: none;
+    position: relative;
+    margin: 10px auto;
+    width: 27.5%;
+    border-radius: 5px;
+    padding: 0 22px;
+    height: 25px;
+    font-size: 16px;
+    left: 28px;
+}
+
+.iletişim-sayfası .ceptelefonu,
+.iletişim-sayfası .emaill {
+    position: relative;
+    margin: 10px auto;
+    left: 28px;
+    width: 70%;
+    border-radius: 5px;
+    padding: 0 22px;
+    height: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.iletişim-sayfası .mesajyaz{
+    position: relative;
+    margin: 10px auto;
+    left: 28px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 0 22px;
+    outline: none;
+    font-size: 16px;
+    height: 50px;
+    width: 70%;
+} 
+.iletişim-sayfası .cins{
+    position: relative;
+    left: 28px;
+    margin: 10px auto;
+    width: 84%;
+    border-radius: 5px;
+    padding: 0 22px;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+} 
+
+
+
+.iletişim-sayfası input[value="Gönder"]
+{
+    cursor: pointer;
+    left: 30px;
+}
+
+.iletişim-sayfası input[value="reset"]
+{
+    cursor: pointer;
+    left: 189px;
+}
+
+.iletişim-sayfası input[value="Gönder"],[value="reset"]
+{
+    position: absolute;
+    top: 350px;
+    width: 130px;
+    height: 25px;
+    border: none;
+    outline: none;
+    color:#0094ff ;
+    background: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.iletişim-sayfası input[value="reset"]:hover{
+ 
+    background: #0094ff;
+    color: #fff;
+}
+
+.iletişim-sayfası input[value="Gönder"]:hover{
+    background: #0094ff;
+    color: #fff;
+}
+
+/****************** finish iletişim *********************/
+
+/****************** start login *********************/
+.login-sayfası{
+    background: url(fotoğraflar/u.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;  
+}
+
+.login-sayfası form{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 400px;
+    background: rgb(0, 0, 0,.5);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.login-sayfası img
+{
+    position: absolute;
+    top: -50px;
+    left: 125px;
+    border-radius: 50%;
+}
+
+.login-sayfası h2{
+    color :#fff ;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.login-sayfası input[type="text"],[type="password"]{
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 25px;
+    border-bottom: 2px solid #0094ff;
+    background:none ;
+}
+
+.login-sayfası input[type="text"]{
+    top: 160px;
+    left: 50px;
+    font-size: 15px;
+}
+
+.login-sayfası input[type="password"]{
+    top: 220px;
+    left: 50px;
+    font-size: 15px;
+}
+
+.login-sayfası ::placeholder{
+    color: #fff;
+}
+
+.login-sayfası input[value="login"]
+{
+    position: absolute;
+    top: 305px;
+    left: 120px;
+    width: 130px;
+    height: px;
+    background: #0094ff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.login-sayfası input[value="login"]:hover{
+    background: #fff;
+    color:#0094ff;
+}
+
+.login-sayfası li a.login:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #0094ff; 
+}
+
+.login-sayfası li a.çizgi:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #0094ff;
+}
+
+@media screen and (max-width: 1250px){
+    
+    .login-sayfası nav li a.çizgi{
+        color:#fff;     
+    }
+    
+    .login-sayfası nav li a.login{ 
+        color:#0094ff;    
+    }
+    
+    .login-sayfası li a.login:after {
+        content: "";
+        display: none;
+        width: 100%;
+        height: 8px;
+        background: #0094ff;
+    }
+}
+
+
+/****************** finish login *********************/
+
+
+/****************** start ilgi-alanlarım *********************/
+
+.ilgi-sayfası{
+    background: url(fotoğraflar/hb.jpg);
+}
+
+.ilgi-sayfası main{
+    margin: 50px auto;
+    background: url(fotoğraflar/bh.jpg);
+    box-shadow: 0px 0px 5px 2px #000;
+    color: white;
+    width: 80%;
+    height: 950px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.ilgi-sayfası p{
+    color: black;
+}
+
+.sonuc{
+    background: rgb(0, 0, 0,.2);
+    position: relative;
+    top: 50px;
+    margin: 10px auto;
+    height: 350px;
+    width: 90%;
+    box-shadow: 0px 0px 5px 2px #000;
+}
+.sonuc img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.buttons{
+   
+    margin: 20px auto;
+    position: relative;
+    top: 50px;
+    width: 90%;
+    border-radius: 5px;
+}
+button{
+    background: rgb(0, 0, 0,.5);
+    box-shadow: 0px 0px 5px 2px #000;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%; 
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+button:focus{
+    outline: none;
+}
+
+.ilgi-sayfası p{
+    position: relative;
+    top: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+@media screen and (max-width: 450px){
+    .sonuc{
+        top: 20px;
+        margin: 10px auto;
+        height: 450px;
+    }
+    .buttons{
+        margin: 20px auto;
+        top: 20px;
+    }
+    .ilgi-sayfası main{
+        margin: 30px auto;
+        height: 1080px;
+    }
+    
+}
+/****************** finish ilgi-alanlarım *********************/
+
+/*********************************** finish proje ***********************************/
