@@ -1,0 +1,95 @@
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>web project hakkımda-sayfası</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="hakkımda-sayfası">
+
+    <div class="containar">
+        <header>
+            <nav>
+                <label class="togle">
+                    <i class="fa fa-bars"></i>
+                </label>
+              
+                <ul>
+                    <label for="" class="logo">Web project</label>
+                    <li><a href="index.html" >Ana Sayfa</a> </li>
+                    <li><a href="hakkımda.html" class="çizgi">Hakkımda</a> </li>
+                    <li><a href="cv.html">Özgeçmiş</a> </li>
+                    <li><a href="şehrim.html">Şehrim</a></li>
+                    <li><a href="mirasımız.html" >Mirasımız</a> </li>
+                    <li><a href="ilgi-alanlarım.html">İlgi alanlarım</a> </li>
+                    <li><a href="iletişim.html">İletişim</a> </li>
+                    <li > <a href="login.html" class="login" >Login</a> </li>
+                </ul>
+                <label for="" class="logo1">Web project</label>
+            </nav>
+        </header>
+    </div>
+    <main>
+      <div class="üst">
+        <div class="resim"> 
+
+            <img class="img" src="fotoğraflar/moon.jpg" alt="user">
+           
+          </div> 
+    
+           <div class="üst-kısım"> 
+                <h3 id="üstsatır">Benim hakkımda neler bilmek istersiniz ?</h3>
+              <br>
+              
+                <p>
+                    Benim adım Najma Bakdach cifit vatandasim. Syriyede dogumusum. Türkiye’ye 24.12.2015‘te geldik ailem‘le beraber. 
+                   
+                </p>
+            
+            </div>  
+        </div>
+            <section>
+              
+                <b>Sevdiğim hobiler:</b>
+                <ul >
+                    <li>Evde spor yapmak</li>
+                    <li>yemek pisirmek </li>
+                    <li>Bisiklete binmek</li>
+                    <li>yurus yapmak</li>
+                </ul>
+
+
+            </section>
+            <section>
+                <b>Bildiğim Web diler:</b>
+                <ul>
+                    <li>Html 60%</li>
+                    <li>Css 50%</li>
+                    <li>Php 10%</p>
+                    </li>
+                </ul>
+
+            </section>
+            <section>
+                <b>Bildiğim diler:</b>
+                <ul>
+                    <li>Arapça 100%</li>
+                    <li>Türkçe 85%</li>
+                    <li>inglizce 35%</li>
+                </ul>
+           
+            </section>
+              
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(' .togle i').click(function(){
+            $('ul').toggleClass('show')
+        });
+    </script>
+
+</body>
+</html>
+
