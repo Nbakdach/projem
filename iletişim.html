@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web project iletişim-sayfası</title>
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="iletişim-sayfası">
+
+    <div class="containar">
+        <header>
+            <nav>
+                <label class="togle">
+                    <i class="fa fa-bars"></i>
+                </label>
+                
+                <ul>
+                    <label for="" class="logo">Web project</label>
+                    <li><a href="index.html" >Ana Sayfa</a> </li>
+                    <li><a href="hakkımda.html" >Hakkımda</a> </li>
+                    <li><a href="cv.html">Özgeçmiş</a> </li>
+                    <li><a href="şehrim.html">Şehrim</a></li>
+                    <li><a href="mirasımız.html">Mirasımız</a> </li>
+                    <li><a href="ilgi-alanlarım.html">İlgi alanlarım</a> </li>
+                    <li><a href="iletişim.html" class="çizgi">İletişim</a> </li>
+                    <li > <a href="login.html" class="login" >Login</a> </li>
+                </ul>
+           </nav>
+           <label for="" class="logo1">Web project</label>
+        </header>
+    </div>
+    <form action="iletişim.php" method="POST">
+ 
+        <h2>Bana mesaj yaz</h2>
+  
+        <input class="ad" type="text" placeholder="Ad ..." name="ad" required >
+        <input class="Soyad"type="text" placeholder=" Soyad ..." name="Soyad" required >
+     
+    
+        <input class="emaill" type="email" placeholder="Eposta ..." name="email" required >
+       
+     
+        <input class="ceptelefonu" type="text" placeholder="Cep telefonu ..." name="cep" required  >
+        <select class="cins" name="cinsiyet">
+            <option  value="cebvaplanmamış" selected  >Cinsiyet</option> 
+            <option  value="erkek" >Erkek </option> 
+            <option  value="kadın" >Kadın </option> 
+            <option  value="değer" >Değer</option> 
+            </select>
+       
+      <textarea class="mesajyaz" name="mesaj"  cols="30" rows="10" placeholder="Mesaj yaz ..." ></textarea>
+
+        <input type="submit" value="Gönder" required>
+        <input type="reset" value="reset" required>
+        
+        <aside>      
+           
+            <div id="simge">
+            <a href="https://wa.me/+905511709415?text=najma" target="-blant"title="whatsapp"><img src="fotoğraflar/w.png" alt="">  </a>
+            <a href="https://www.facebook.com/NAJMABK22" target="-blant"title="facebook"><img src="fotoğraflar/f.png" alt="">  </a>
+            <a href="mailto:najmabakdach2000@gmail.com" target="-blant"title="mail"><img src="fotoğraflar/g.png" alt="">  </a>
+            <a href="https://goo.gl/maps/DKE3PqjvJyVPWkR7A" title="konum" target="-blant"><img src="fotoğraflar/h.png" alt="">  </a>
+            </div>
+        </aside>
+       
+    </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(' .togle i').click(function(){
+        $('ul').toggleClass('show')
+    });
+</script>
+</body>
+</html>
